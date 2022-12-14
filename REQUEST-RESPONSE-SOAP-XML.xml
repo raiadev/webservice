@@ -1,0 +1,44 @@
+REQUEST
+
+POST / consultaCliente HTTP/1.1
+Host: www.cadastrocliente.com
+Content-type: application/soap+xml; charset=utf-8
+Content-Lenght: nnn
+
+ <?xml version = "1.0"?>
+<soap: Envelope xmlns: soap = "http://schemas.xmlsoap.org/soap/envelope/">
+    <soap: Body xmlns: m = "http:// www.cadastrocliente.com/consultaCliente"/>
+    <m: consultaClienteRequest>
+        <m:cpf>12220022020</m:cpf>
+        <m:consultaClienteRequest>
+</soap:Body>
+</soap:Envelope>
+
+
+RESPONSE
+
+HTTP/1.1 200 OK
+Content-Type: application/soap+xml; charset=utf-8
+Content-Lenght: nnn 
+
+</xml version = "1.0"?>
+<soap:Envelope
+xmls:soap="http://schemas.xmlsoap.org?soap?envelope/">
+<soap:Body xmlns:m=m="http://www.cadastrocliente.com/consultaCliente">
+<m:consultaClienteResponse>
+  <m:nome>Raiane Santos</m:nome>
+  <m:Endereco>R.Fernandes Vieira, 110, Boa vista<m:Endereco>
+  <m:Telefone>97777-0000<m:Telefone>
+<m:consultaClienteResponse>
+</soap:Body>
+</soap:Envelope>
+
+
+
+
+
+
+
+
+
+
